@@ -1,0 +1,27 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@plugin "daisyui" {
+  themes: cupcake --default
+}
+
+@theme {
+  --font-main: "Winky Sans", sans-serif;
+  --font-title: "Dancing Script", cursive;
+}
+
+body {
+  @apply bg-base-100 max-w-screen overflow-x-hidden flex flex-col font-main
+}
+
+p a {
+  @apply text-primary-content hover:text-accent-content
+}
+
+b {
+  @apply text-accent-content
+}
