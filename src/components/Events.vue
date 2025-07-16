@@ -8,7 +8,7 @@ const props = defineProps({
 const events = ref([
   { date: '10/02/2026', name: props.t.timeout },
   { date: '17/04/2026', name: props.t.prewed, place: props.t.tba },
-  { date: '18/04/2026', name: props.t.wed, place: '<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a>' },
+  { date: '18/04/2026', name: props.t.wed, place: '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a></b>' },
 ])
 
 watch(
@@ -17,7 +17,7 @@ watch(
     events.value = [
       { date: '10/02/2026', name: props.t.timeout },
       { date: '17/04/2026', name: props.t.prewed, place: props.t.tba },
-      { date: '18/04/2026', name: props.t.wed, place: '<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a>' }
+      { date: '18/04/2026', name: props.t.wed, place: '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a></b>' }
     ]
   }
 )

@@ -14,7 +14,7 @@ export default {
   prewed: 'Cena de <b>Preboda</b>',
   wed: '<b>Ceremonia</b> y <b>Celebración</b>',
   tba: 'Por determinar',
-  timeout: `Última oportunidad para actualizar el <a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">formulario de confirmación</a>`,
+  timeout: `Última oportunidad para actualizar el <b><a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">formulario de confirmación</a></b>`,
   events: 'Marca las fechas',
   eventsQuote: `<b>¡Aún estamos cerrando detalles!</b> Visita esta página de vez en cuando: iremos actualizando fechas y eventos a medida que se confirmen.`,
   historyTitle: 'Poder amar es un derecho, no una moda',

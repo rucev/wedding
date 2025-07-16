@@ -14,7 +14,7 @@ export default {
   prewed: '<b>Pre-wedding</b> Dinner',
   wed: '<b>Ceremony</b> & <b>Celebration</b>',
   tba: 'TBA',
-  timeout: `Last Chance to Update the <a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">RSVP form</a>`,
+  timeout: `Last Chance to Update the <b><a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">RSVP form</a></b>`,
   events: 'Mark your calendars',
   eventsQuote: `<b>We're still ironing out the details!</b> Keep an eye on this site, we'll update dates and events as things get confirmed.`,
   historyTitle: 'Love Is a Right, Not a Trend',
