@@ -92,12 +92,12 @@ watch(locale, (newLocale) => {
       </div>
       <div class="drawer-side w-full">
         <label for="mobile-drawer" class="drawer-overlay"></label>
-        <ul class="menu p-4 w-full bg-base-200 text-base">
-          <li v-for="link in navLinks" :key="link.id">
-            <a :href="link.id" @click="closeDrawer('mobile-drawer')">{{ link.name }}</a>
-          </li>
+        <ul class="menu px-4 w-full bg-base-200 text-base py-7">
           <li>
             <a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">{{ t.form }}</a>
+          </li>
+          <li v-for="link in navLinks" :key="link.id">
+            <a :href="link.id" @click="closeDrawer('mobile-drawer')">{{ link.name }}</a>
           </li>
         </ul>
       </div>
