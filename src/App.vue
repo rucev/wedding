@@ -68,8 +68,8 @@ watch(locale, (newLocale) => {
 </script>
 
 <template>
-  <div v-if="locale">
-    <div class="drawer drawer-top z-20 fixed">
+  <div v-if="locale" class="w-screen overflow-hidden">
+    <div class="drawer drawer-top z-20 fixed w-full">
       <input id="mobile-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         <div class="navbar bg-base-200 w-full justify-between">
@@ -90,7 +90,7 @@ watch(locale, (newLocale) => {
             </div>
           </div>
       </div>
-      <div class="drawer-side">
+      <div class="drawer-side w-full">
         <label for="mobile-drawer" class="drawer-overlay"></label>
         <ul class="menu p-4 w-full bg-base-200 text-base">
           <li v-for="link in navLinks" :key="link.id">

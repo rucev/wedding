@@ -32,8 +32,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="overflow-hidden w-full">
-    <div ref="carouselRef" class="carousel w-full overflow-x-auto scroll-smooth whitespace-nowrap">
+  <div class="overflow-hidden max-w-screen">
+    <div ref="carouselRef" class="carousel w-screen overflow-x-auto scroll-smooth whitespace-nowrap">
       <div class="carousel-item w-full inline-block h-86">
         <img
           src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/andalucia/patio-naranjos-catedral-cordoba-s624076895.jpg"

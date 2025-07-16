@@ -45,8 +45,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="text-center mb-5">
-    <div class="text-xl font-bold">
+  <div class="text-center mb-5 w-full overflow-hidden">
+    <div class="text-xl font-bold flex flex-row flex-wrap w-full gap-3 justify-center">
       <span>{{`${countdown.days} ${t.days} ` }}</span>
       <span>{{ `${countdown.hours} ${t.hours} ` }}</span>
       <span>{{ `${countdown.minutes} ${t.minAnd} ` }} </span>
