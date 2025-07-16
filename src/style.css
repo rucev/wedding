@@ -18,7 +18,7 @@ body {
   @apply bg-base-100 max-w-screen overflow-x-hidden flex flex-col font-main
 }
 
-p a {
+p a, .collapse-content a, .timeline a {
   @apply text-primary-content hover:text-accent-content
 }
 

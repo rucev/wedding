@@ -11,7 +11,7 @@ const props = defineProps({
     <div v-for="faq in props.t.faqContent" class="collapse collapse-arrow bg-base-100 border border-base-300 w-full md:w-1/2">
       <input type="radio" name="my-accordion-2" />
       <div class="collapse-title font-semibold text-xl">{{ faq.q }}</div>
-      <div class="collapse-content text-xl">{{ faq.a }}</div>
+      <div class="collapse-content text-xl" v-html="faq.a"></div>
     </div>
   </section>
 </template>
