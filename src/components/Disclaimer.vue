@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section id="disclaimer" class="text-center w-full bg-base-300 flex flex-col-reverse md:flex-row justify-center items-center gap-5 min-h-fit bottom-0 relative py-10 px-3">
+  <section id="disclaimer" class="text-center w-full bg-base-300 flex flex-col-reverse md:flex-row justify-center items-center gap-5 min-h-fit h-auto bottom-0 relative py-10 px-3">
     <div>
       <img src="https://i.imgur.com/qOt3QRk.gif" class="rounded-xl"/>
     </div>

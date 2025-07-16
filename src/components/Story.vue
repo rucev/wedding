@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section id="story" class="text-center w-full max-w-11/12 bg-base-100 flex flex-col-reverse md:flex-row justify-center items-center gap-5 min-h-fit h-[500px] py-10 pl-5">
+  <section id="story" class="text-center w-full max-w-11/12 bg-base-100 flex flex-col-reverse md:flex-row justify-center items-center gap-5 h-auto min-h-[500px] py-10 pl-5">
     <div>
       <img src="/sleepy-otters.svg" class="w-60 h-60 md:h-96 md:w-96 rotate-45 animate-[spin_15s_infinite] self-center"/>
     </div>

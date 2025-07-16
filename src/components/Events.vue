@@ -25,7 +25,7 @@ watch(
 </script>
 
 <template>
- <section id="events" class="bg-base-100 w-11/12 flex flex-col justify-center items-center gap-2 py-15 overflow-x-hidden">
+ <section id="events" class="bg-base-100 w-11/12 flex flex-col justify-center items-center gap-2 py-15 overflow-x-hidden min-h-fit h-auto">
   <h2 class="text-5xl w-full text-center text-secondary-content font-extrabold font-title pb-2">{{ $props.t.events }}<span class="pl-1 text-accent font-main">*</span></h2>
   <ul class="timeline timeline-vertical text-2xl">
   <li v-for="event in events">

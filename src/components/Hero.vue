@@ -29,9 +29,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="gap-3 px-2 md:px-8 bg-base-200 w-screen py-20 overflow-x-hidden">
+  <section class="gap-3 px-2 md:px-8 bg-base-200 w-screen py-20 overflow-x-hidden min-h-fit h-auto">
     <div class="flex justify-center items-center gap-3 flex-col-reverse lg:flex-row-reverse">
-      <div class="mask mask-squircle max-w-11/12 h-fit w-96">
+      <div class="mask mask-squircle max-w-11/12 min-h-fit h-auto w-96">
         <div
         class="carousel carousel-vertical rounded-box h-96 w-96 overflow-hidden"
         ref="carouselRef"
