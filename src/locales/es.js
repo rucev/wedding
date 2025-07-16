@@ -39,6 +39,7 @@ export default {
     }
   ],
   disclaimerTitle: `¡Aviso!`,
+  form: 'Haz clic aquí para confirmar tu invitación',
   disclaimerContent: `Es nuestra primera boda… si se nos olvida algo, ¡dínoslo sin miedo!`
 
 }

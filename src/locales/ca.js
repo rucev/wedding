@@ -38,6 +38,7 @@ export default {
       a: `És un casament, així que hi haurà qui vingui elegant. Però, sincerament, volem que vingueu còmodes. L'única norma: no venir despullats!`
     }
   ],
+  form: 'Fes clic aquí per confirmar la teva invitació',
   disclaimerTitle: `Atenció!`,
   disclaimerContent: `És la primera vegada que ens casem… així que si ens deixem alguna cosa, fes-nos-ho saber!`
 }

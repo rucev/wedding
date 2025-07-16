@@ -38,6 +38,7 @@ export default {
       a: `It's a wedding, so some guests will dress up. But honestly, what we want most is for you to feel comfortable. The only rule: no nudes, please!`
     }
   ],
+  form: 'Click here to confirm your invitation',
   disclaimerTitle: `Disclaimer!`,
   disclaimerContent: `This is our first wedding… so if we're missing something, let us know!`
 }

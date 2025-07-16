@@ -96,6 +96,9 @@ watch(locale, (newLocale) => {
           <li v-for="link in navLinks" :key="link.id">
             <a :href="link.id" @click="closeDrawer('mobile-drawer')">{{ link.name }}</a>
           </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://forms.gle/ZxMq53erEwtdcxYBA">{{ t.form }}</a>
+          </li>
         </ul>
       </div>
     </div>
