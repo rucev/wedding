@@ -1,9 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const props = defineProps({
-  t: Object
-})
+const props = defineProps({ t: Object })
 
 const countdown = ref({
   days: 0,
@@ -14,7 +12,7 @@ const countdown = ref({
 
 let intervalId
 
-function updateCountdown() {
+const updateCountdown = () => {
   const targetDate = new Date('2026-04-18T10:00:00Z')
   const now = new Date()
   const diff = targetDate - now
@@ -45,12 +43,42 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="text-center mb-5 w-full overflow-hidden">
-    <div class="text-xl font-bold flex flex-row flex-wrap w-full gap-3 justify-center">
-      <span>{{`${countdown.days} ${t.days} ` }}</span>
-      <span>{{ `${countdown.hours} ${t.hours} ` }}</span>
-      <span>{{ `${countdown.minutes} ${t.minAnd} ` }} </span>
-      <span>{{ `${countdown.seconds} ${t.sec}`}} </span>
+  <div class="grid grid-flow-col gap-5 text-center auto-cols-max w-[full] justify-center">
+    <div class="flex flex-col font-mono text-center text-xs md:text-sm w-[4em] md:w-[6em]">
+      <span class="countdown mx-auto text-center text-2xl md:text-5xl">
+        <span
+        class="text-center"
+          :style="{ '--value': String(countdown.days) }"
+        ></span>
+      </span>
+      {{ t.days }}
+    </div>
+    <div class="flex flex-col font-mono text-center text-xs md:text-sm w-[4em] md:w-[6em]">
+      <span class="countdown mx-auto text-center text-2xl md:text-5xl">
+        <span
+        class="text-center"
+          :style="{ '--value': String(countdown.hours) }"
+        ></span>
+      </span>
+      {{ t.hours }}
+    </div>
+
+    <div class="flex flex-col font-mono text-center text-xs md:text-sm w-[4em] md:w-[6em]">
+      <span class="countdown mx-auto text-center text-2xl md:text-5xl">
+        <span
+          :style="{ '--value': String(countdown.minutes) }"
+        ></span>
+      </span>
+      {{ t.min }}
+    </div>
+
+    <div class="flex flex-col text-center text-xs md:text-sm w-[4em] md:w-[6em]">
+      <span class="countdown mx-auto font-mono text-center text-2xl md:text-5xl">
+        <span
+          :style="{ '--value': String(countdown.seconds) }"
+        ></span>
+      </span>
+      {{ t.sec }}
     </div>
   </div>
 </template>

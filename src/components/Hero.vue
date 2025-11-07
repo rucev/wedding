@@ -60,7 +60,9 @@ onMounted(() => {
         <h1 class="text-8xl font-bold text-center text-secondary-content font-title">{{ $props.t.title }}</h1>
         <h2 class="text-5xl font-semibold text-center font-title">{{ $props.t.subtitle }}</h2>
         <div class="py-6 text-center" v-html=$props.t.invitation></div>
-        <Countdown :t="t" />
+        <div class="flex w-full justify-center pb-8">
+          <Countdown :t="t" />
+        </div>
         <a href="https://forms.gle/ZxMq53erEwtdcxYBA" target="_blank" rel="noopener" class="btn btn-accent text-xl max-w-48 self-center mb-10">
           {{ $props.t.toForm }}
         </a>
