@@ -66,7 +66,7 @@ const iframeSrc = computed(() => mapUrls[selected.value])
           :checked="selected === 'wedRadio'"
           @change="selected = 'wedRadio'"
         />
-      </div>props.t.busPickCordoba
+      </div>
       <p v-if="selected === 'wedRadio' || selected === 'prewedRadio'" class="text-xl text-primary-content font-extrabold font-title pb-2">{{ directions[selected] }}</p>
       <p v-if="selected === 'busRadio'" class="text-xl text-primary-content font-extrabold font-title pb-2">{{ props.t.busPickCordoba }}</p>
 
