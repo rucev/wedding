@@ -8,6 +8,7 @@ import Events from './components/Events.vue'
 import History from './components/History.vue'
 import Faq from './components/Faq.vue'
 import Disclaimer from './components/Disclaimer.vue'
+import Book from './components/Book.vue'
 
 const locale = ref(null)
 const t = ref(null)
@@ -24,6 +25,7 @@ const setNavLinks = () => {
     {name: t.value.events, id: '#events'},
     {name: t.value.locationTitle, id: '#location'},
     {name: t.value.storyTitle, id: '#story'},
+    {name: t.value.bookTitle, id: '#share'},
     {name: t.value.historyTitle, id: '#history'},
     {name: t.value.faq, id: '#faq'},
     {name: t.value.disclaimerTitle, id: '#disclaimer'},
@@ -107,6 +109,7 @@ watch(locale, (newLocale) => {
   <Events v-if="t" :t="t"/>
   <Place v-if="t" :t="t"/>
   <Story v-if="t" :t="t"/>
+  <Book v-if="t" :t="t" />
   <History v-if="t" :t="t"/>
   <Faq v-if="t" :t="t" />
   <Disclaimer v-if="t" :t="t" />

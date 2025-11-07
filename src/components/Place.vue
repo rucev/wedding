@@ -33,7 +33,7 @@ const iframeSrc = computed(() => mapUrls[selected.value])
   <h2 class="text-5xl text-secondary-content font-extrabold font-title pb-2">
     {{ props.t.locationTitle }}
   </h2>
-  <div class="text-center w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-5">
+  <div class="text-center w-full flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-5">
   <div class="w-full md:w-2/3 text-xl">
     <h2 class="text-4xl text-primary-content font-extrabold font-title pb-2">
       {{ props.t.locationSubtitle }}
