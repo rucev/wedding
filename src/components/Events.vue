@@ -5,10 +5,13 @@ const props = defineProps({
   t: Object
 })
 
+const prewedingLocation = '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/vSzNuMcGSGHp4r268">Kon-Q</a></b>'
+const wedingLocation = '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a></b>'
+
 const events = ref([
   { date: '10/02/2026', name: props.t.timeout },
-  { date: '17/04/2026', name: props.t.prewed, place: props.t.tba },
-  { date: '18/04/2026', name: props.t.wed, place: '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a></b>' },
+  { date: '17/04/2026', name: props.t.prewed, place: prewedingLocation },
+  { date: '18/04/2026', name: props.t.wed, place: wedingLocation },
 ])
 
 watch(
@@ -16,8 +19,8 @@ watch(
   () => {
     events.value = [
       { date: '10/02/2026', name: props.t.timeout },
-      { date: '17/04/2026', name: props.t.prewed, place: props.t.tba },
-      { date: '18/04/2026', name: props.t.wed, place: '<b><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/QLPZvYDtoridTG7dA">Huerta 28</a></b>' }
+      { date: '17/04/2026', name: props.t.prewed, place: prewedingLocation },
+      { date: '18/04/2026', name: props.t.wed, place: wedingLocation }
     ]
   }
 )

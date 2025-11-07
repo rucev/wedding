@@ -12,6 +12,7 @@ html {
 @theme {
   --font-main: "Winky Sans", sans-serif;
   --font-title: "Dancing Script", cursive;
+  --font-mono: "Sono", monospace;
 }
 
 body {
